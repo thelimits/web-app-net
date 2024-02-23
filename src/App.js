@@ -26,7 +26,7 @@ class App extends Component {
     const birthplaceFilter = filter.BirthPlace.toLowerCase();
 
     try {
-      let apiUrl = 'http://localhost:5224/api/players';
+      let apiUrl = 'http://newcorewebservice.somee.com/api/players';
 
       // If a birthplace filter is specified, append it to the API URL
       if (birthplaceFilter) {
@@ -65,7 +65,7 @@ class App extends Component {
 
     try {
       // Send POST request to add a new player
-      const response = await fetch('http://localhost:5224/api/players', {
+      const response = await fetch('http://newcorewebservice.somee.com/api/players', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
